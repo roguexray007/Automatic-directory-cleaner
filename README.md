@@ -6,3 +6,6 @@
 				  
 I actually added option of specifying which directory u want to organise and where u want all the files to get organised..
 Any file without extension will go into WITHOUT_EXT folder 
+
+
+REFER TO DEMO-RUN FOR MORE INSIGHT AND BETTER UNDERSTANDING
