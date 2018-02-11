@@ -57,8 +57,10 @@ for root, dirs, files in os.walk(options.path):
 		copy_dir_path=options.new_dir+'/'+ext.upper()
 		if not os.path.exists(copy_dir_path):
 			os.makedirs(copy_dir_path)
-		shutil.copy(root+'/'+filename,copy_dir_path+'/'+filename)
-		#if u want to move use shutil.move instead of shutil.copy
-		# shutil.move(root+'/'+filename,copy_dir_path+'/'+filename)
+		shutil.move(root+'/'+filename,copy_dir_path+'/'+filename)
+		#if u want to copy use shutil.copy instead of shutil.move
+		#shutil.copy(root+'/'+filename,copy_dir_path+'/'+filename)
+		
+		 
 
 
