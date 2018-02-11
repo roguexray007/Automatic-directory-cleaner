@@ -7,5 +7,7 @@
 I actually added option of specifying which directory u want to organise and where u want all the files to get organised..
 Any file without extension will go into WITHOUT_EXT folder 
 
+Additional feature--- if u want to exclude some extensions from being organised,just include that extension in the list named
+		      		  exclude_ext
 
 REFER TO DEMO-RUN FOR MORE INSIGHT AND BETTER UNDERSTANDING
