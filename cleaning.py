@@ -42,6 +42,8 @@ if options.new_dir is None:
 if not os.path.exists(options.new_dir):
 	os.makedirs(options.new_dir)
 
+exclude_ext=['exe']		# u can specify the extensions to exclude (like for counterstrike we have .exe)
+
 #path='/Users/hardxray007/Desktop' sample directory to reorganize
 for root, dirs, files in os.walk(options.path):  
 	if root!=options.path:
@@ -54,6 +56,8 @@ for root, dirs, files in os.walk(options.path):
 		else:
 			ind=filename.rfind('.')+1
 			ext=filename[ind:]
+		if ext in exclude_ext:
+			continue
 		copy_dir_path=options.new_dir+'/'+ext.upper()
 		if not os.path.exists(copy_dir_path):
 			os.makedirs(copy_dir_path)
