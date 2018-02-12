@@ -10,8 +10,9 @@ parser.add_option('-p','--path',dest='path',help='path of the directory')
 if options.path is None:
     options.path = input('Enter path of directory:')
 
-cmd1='find %s -exec du -a -h {} \;|sort -rh|grep ".*\.[a-zA-Z]"|uniq|head -n 10' % options.path    
-
+# cmd1='find %s -exec du -a -h {} \;|sort -rh|grep ".*\.[a-zA-Z]"|uniq|head -n 10' % options.path  
+#more optimized version
+cmd1='find %s -not -type d -exec ls -s  {} \;|sort -rh|head -n 10' % options.path
 proc=subprocess.call(cmd1,shell=True)
 
 
