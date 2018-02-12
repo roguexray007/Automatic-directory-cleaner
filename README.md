@@ -10,4 +10,9 @@ Any file without extension will go into WITHOUT_EXT folder
 Additional feature--- if u want to exclude some extensions from being organised,just include that extension in the list named
 		      		  exclude_ext
 
+NOTE: for mac and linux user
+in largest_10_files.py , for mac use cmd1 as ls -sh is not displaying size in human readable format in mac
+and use optimised cmd 2 in linux.U can use cmd1 for linux also but cmd2 is optimised
+
+
 REFER TO DEMO-RUN FOR MORE INSIGHT AND BETTER UNDERSTANDING
