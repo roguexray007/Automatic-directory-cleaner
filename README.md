@@ -11,8 +11,8 @@ Additional feature--- if u want to exclude some extensions from being organised,
 		      		  exclude_ext
 
 NOTE: for mac and linux user
-in largest_10_files.py , for mac use cmd1 as ls -sh is not displaying size in human readable format in mac
-and use optimised cmd 2 in linux.U can use cmd1 for linux also but cmd2 is optimised
+in largest_10_files.py , for mac use cmd2 as ls -sh is not displaying size in human readable format in mac
+and use optimised cmd1 in linux.U can use cmd2 for linux also but cmd1 is optimised
 
 
 REFER TO DEMO-RUN FOR MORE INSIGHT AND BETTER UNDERSTANDING
